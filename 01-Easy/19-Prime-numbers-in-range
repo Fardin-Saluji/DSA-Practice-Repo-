@@ -1,0 +1,25 @@
+// Problem: Write a program to find all prime numbers within a given range
+// Input: range = [10, 30]
+// Output: [11, 13, 17, 19, 23, 29]
+
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+function findPrimesInRange(start, end) {
+  const primes = [];
+  for (let num = start; num <= end; num++) {
+    if (isPrime(num)) {
+      primes.push(num);
+    }
+  }
+  return primes;
+}
+
+const rangeStart = 10;
+const rangeEnd = 30;
+console.log(findPrimesInRange(rangeStart, rangeEnd));
