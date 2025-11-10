@@ -1,0 +1,20 @@
+// Problem: Write a program to generate multiplication tables for a given numbers
+// Input: number = 4;
+// Output: 
+// 4 * 1 = 4
+// 4 * 2 = 8
+// 4 * 3 = 12
+// 4 * 4 = 16
+// 4 * 5 = 20
+
+function generateMultiplicationTable(number, limit) {
+  for (let i = 1; i <= limit; i++) {
+    console.log(`${number} x ${i} = ${number * i}`);
+  }
+}
+
+
+let number = 4;
+let limit = 5;
+
+generateMultiplicationTable(number, limit);
