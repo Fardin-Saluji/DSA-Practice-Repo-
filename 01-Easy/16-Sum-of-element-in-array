@@ -1,0 +1,11 @@
+// Problem: Write a program to find the sum of elements in an array
+// Input: array = [1, 2, 3, 4, 5];
+// Output: 15;
+
+let array = [1, 2, 3, 4, 5];
+
+let sum = array.reduce(function(total, current) {
+  return total + current;
+}, 0);
+
+console.log(sum);
