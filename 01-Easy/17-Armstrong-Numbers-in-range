@@ -1,0 +1,28 @@
+// Problem: Write a program to find all Armstrong numbers within a given range
+// Input: range = [1, 500];
+// Output: [1, 153, 370, 371, 407];
+
+function isArmstrong(num) {
+  const digits = num.toString().split('');
+  const power = digits.length;
+  const sum = digits.reduce((total, digit) => {
+    return total + Math.pow(Number(digit), power);
+  }, 0);
+  return sum === num;
+}
+
+function findArmstrongNumbers(start, end) {
+  let result = [];
+  for (let i = start; i <= end; i++) {
+    if (isArmstrong(i)) {
+      result.push(i);
+    }
+  }
+  return result;
+}
+
+let rangeStart = 1;
+let rangeEnd = 500;
+
+let armstrongNumbers = findArmstrongNumbers(rangeStart, rangeEnd);
+console.log(armstrongNumbers);
