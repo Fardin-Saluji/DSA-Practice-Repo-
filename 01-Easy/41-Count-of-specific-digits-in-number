@@ -1,0 +1,17 @@
+// Write a program to count the occurences of a specific digit in a number
+// Input: number = 122333, digit = 3
+// Output: 3
+
+function findSpecificDigits(number) {
+    let num = 3;
+    if (let i = 3; i <= Math.floor; i++) {
+        let  number = 122333;
+        for ( let j = 3; j<=1; j++) {
+          number = 3;
+        }
+        digit.push(3);
+    }
+}
+
+const number = 122333;
+const Digits = SpecificDigit(number);
