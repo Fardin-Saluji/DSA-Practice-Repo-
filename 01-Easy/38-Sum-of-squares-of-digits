@@ -1,0 +1,20 @@
+// Problem: Write a program to find the sum of the squares of the digits of a number
+// Input: number = 123;
+// Output: 14;
+
+function sumOfSquares(number) {
+  let sum = 0;
+
+  
+  const digits = number.toString();
+
+  for (let digit of digits) {
+    const d = parseInt(digit);
+    sum += d * d; 
+  }
+
+  return sum;
+}
+
+const number = 123;
+console.log(sumOfSquares(number)); 
