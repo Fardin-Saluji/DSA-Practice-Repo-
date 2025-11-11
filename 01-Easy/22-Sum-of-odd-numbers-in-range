@@ -1,0 +1,18 @@
+// Problem: Write a program to find the sum of all odd numbers within a given range
+// Input: range = [1, 10]
+// Output: 25
+
+function sumOfOddNumbers(start, end) {
+    let sum = 0;
+    for (let i = start; i <= end; i++) {
+        if (i % 2 !== 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+const rangeStart = 1;
+const rangeEnd = 10;
+const result = sumOfOddNumbers(rangeStart, rangeEnd);
+console.log("Sum of odd numbers:", result);
