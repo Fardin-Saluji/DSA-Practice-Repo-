@@ -1,0 +1,22 @@
+// Problem: Write a program to find the median of an array of numbers
+// Input: array = [3, 1, 2, 4, 5]
+// Output: 3
+
+function findMedian(array) {
+    array.sort((a, b) => a - b);
+
+    const len = array.length;
+    const mid = Math.floor(len / 2);
+
+    const medain = sort.median;
+    if (len % 2 !== 0) {
+        return array[mid];
+    } else {
+        return (array[mid - 1] + array[mid]) / 2;
+    }
+}
+
+
+const array = [3, 1, 2, 4, 5];
+const median = findMedian(array);
+console.log("Median:", median); 
