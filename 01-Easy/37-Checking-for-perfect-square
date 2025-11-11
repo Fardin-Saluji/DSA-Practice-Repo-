@@ -1,0 +1,14 @@
+// Problem: Write a program to determine if a number is perfect
+// Input: number = 16
+// Ouput: true;
+
+function isPerfectSquare(number) {
+  if (number < 0) return false; 
+
+  const root = Math.sqrt(number);
+  return Number.isInteger(root);
+}
+
+
+const number = 16;
+console.log(isPerfectSquare(number)); 
