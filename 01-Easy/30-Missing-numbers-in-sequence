@@ -1,0 +1,20 @@
+// Problem: Write a program to find missing numbers in a sequence from 1 to n.
+// Input: Sequence = [1, 2, 4, 5]
+// Output: [3]
+
+function findMissingNumbers(sequence, n) {
+    const missing = [];
+
+    for (let i = 1; i <= n; i++) {
+        if (!sequence.includes(i)) {
+            missing.push(i);
+        }
+    }
+
+    return missing;
+}
+
+const sequence = [1, 2, 4, 5];
+const n = 5;
+const result = findMissingNumbers(sequence, n);
+console.log("Missing numbers:", result);
