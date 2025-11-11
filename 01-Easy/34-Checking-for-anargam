@@ -1,0 +1,16 @@
+// Problem: Write a program to check if two strings are anagrams
+// Input: string1 = "listen", string2 = "silent"
+// Output: True;
+
+function areAnagrams(str1, str2) {
+    
+    const normalize = str => str.toLowerCase().split('').sort().join('');
+
+    return normalize(str1) === normalize(str2);
+}
+
+
+const string1 = "listen";
+const string2 = "silent";
+
+console.log(`Are "${string1}" and "${string2}" anagrams?`, areAnagrams(string1, string2)); 
