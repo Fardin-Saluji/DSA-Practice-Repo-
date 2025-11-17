@@ -1,0 +1,18 @@
+// Problem : Write a program to calculate the sum of the first N odd numbers
+// Input: N = 5;
+// Output: 25;
+
+function sumOfOddNumbers(N) {
+  let sum = 0;
+  let odd = 1;
+
+  for (let i = 0; i < N; i++) {
+    sum += odd;
+    odd += 2; 
+  }
+
+  return sum;
+}
+
+const N = 5;
+console.log(sumOfOddNumbers(N)); 
