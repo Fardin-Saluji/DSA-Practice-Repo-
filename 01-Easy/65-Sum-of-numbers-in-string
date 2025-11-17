@@ -1,0 +1,21 @@
+// Write a program to extract and sum all numbers present in a given string
+// Input: string = "The numbers are 12 and 34"
+// Output: 46
+
+function sumNumbersInString(str) {
+
+  const numbers = str.match(/\d+/g);
+
+  if (!numbers) return 0;
+
+
+  const sum = numbers
+    .map(Number)
+    .reduce((acc, num) => acc + num, 0);
+
+  return sum;
+}
+
+
+const string = "The numbers are 12 and 34";
+console.log(sumNumbersInString(string)); 
