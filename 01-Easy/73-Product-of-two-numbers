@@ -1,0 +1,18 @@
+// Problem: Write a program to find the sum of the digits of the product of two given numbers
+// Input: number1 = 12, number2 = 34;
+// Output: 9
+
+function sumOfDigitsOfProduct(num1, num2) {
+    const product = num1 * num2;
+    let sum = 0;
+
+    for (let digit of product.toString()) {
+        sum += Number(digit);
+    }
+
+    return sum;
+}
+
+const number1 = 12;
+const number2 = 34;
+console.log(sumOfDigitsOfProduct(number1, number2)); 
