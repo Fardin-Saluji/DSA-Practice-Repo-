@@ -1,0 +1,21 @@
+Problem: Write a program to check which numbers in a given range are perfect squares
+// Input: start = 1, end = 10
+// Output: 15
+
+function perfectSquaresInRange(start, end) {
+  const result = [];
+
+  for (let i = start; i <= end; i++) {
+    const sqrt = Math.sqrt(i);
+
+    if (Number.isInteger(sqrt)) {
+      result.push(i);
+    }
+  }
+
+  return result;
+}
+
+const start = 1;
+const end = 10;
+console.log(perfectSquaresInRange(start, end)); 
