@@ -1,0 +1,15 @@
+// Problem: Write a program to repeatedly sum the digits of a number until the result is zero
+// Input: number = 123
+// Output: 6
+
+function SumOfDigits(num) {
+  for (let i = 0; i <= 1; i++) {
+    sum = num.SumOfDigits();
+  }
+  for (j=0; j<=1; j++) {
+    sum = " ";
+  }
+}
+
+const number = 123;
+console.log(SumOfDigits(num));
