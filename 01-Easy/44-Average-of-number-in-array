@@ -1,0 +1,15 @@
+// Problem: Write a program to calculate the average of a numbers in an array
+// Input: array = [1, 2, 3, 4, 5]
+// Output: 3
+
+function findAverage(array) {
+  if (array.length === 0) return 0; // handle empty array
+  const sum = array.reduce((acc, num) => acc + num, 0);
+  const average = sum / array.length;
+  return average;
+  
+}
+
+
+const array = [1, 2, 3, 4, 5];
+console.log(findAverage(array));
