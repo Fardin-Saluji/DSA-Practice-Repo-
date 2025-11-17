@@ -1,0 +1,18 @@
+// Problem: Write a program to find all divisors of a given number
+// Input: number = 12;
+// Output: 1, 2, 3, 4, 6,12
+
+function findDivisors(number) {
+  const divisors = [];
+
+  for (let i = 1; i <= number; i++) {
+    if (number % i === 0) {
+      divisors.push(i);
+    }
+  }
+
+  return divisors;
+}
+
+const number = 12;
+console.log(findDivisors(number)); 
