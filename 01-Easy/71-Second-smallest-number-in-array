@@ -1,0 +1,22 @@
+// Problem: Write a program to find the second smallest number in an array
+// Input: array = [12, 13, 1, 10, 34, 1]
+// Output: 10
+
+function secondSmallest(arr) {
+    let smallest = Infinity;
+    let secondSmallest = Infinity;
+
+    for (let num of arr) {
+        if (num < smallest) {
+            secondSmallest = smallest;
+            smallest = num;
+        } else if (num > smallest && num < secondSmallest) {
+            secondSmallest = num;
+        }
+    }
+
+    return secondSmallest === Infinity ? null : secondSmallest;
+}
+
+const array = [12, 13, 1, 10, 34, 1];
+console.log(secondSmallest(array));
