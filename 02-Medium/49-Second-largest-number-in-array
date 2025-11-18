@@ -1,0 +1,25 @@
+// Problem: Write a program to find the second largest number in array.
+// Input: array = [10, 20, 4, 45, 99]
+// Output: 45
+
+function secondLargest(arr) {
+  if (arr.length < 2) {
+    return "Array must contain at least two elements.";
+  }
+
+  let first = -Infinity, second = -Infinity;
+
+  for (let num of arr) {
+    if (num > first) {
+      second = first;
+      first = num;
+    } else if (num > second && num < first) {
+      second = num;
+    }
+  }
+
+  return second === -Infinity ? "No second largest number found." : second;
+}
+
+const array = [10, 20, 4, 45, 99];
+console.log(secondLargest(array)); 
