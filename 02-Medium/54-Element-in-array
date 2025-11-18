@@ -1,0 +1,22 @@
+// Program : Write a program to find all pairs of element in an array whose sum equals a specified Target.
+// Input: array = [1, 2, 3, 4, 5], target = 5;
+// Output: [(1,4), (2,3)]
+
+function findPairsWithSum(array, target) {
+  const seen = new Set();
+  const pairs = [];
+
+  for (let num of array) {
+    const complement = target - num;
+    if (seen.has(complement)) {
+      pairs.push([complement, num]);
+    }
+    seen.add(num);
+  }
+
+  return pairs;
+}
+
+const array = [1, 2, 3, 4, 5];
+const target = 5;
+console.log(findPairsWithSum(array, target));
