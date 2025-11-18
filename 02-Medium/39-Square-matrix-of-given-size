@@ -1,0 +1,30 @@
+// Problem: Write a program to generate a square matrix of a given size and fill it with sequential numbers
+// Input: size = 3
+// Output:
+// 1 2 3
+// 4 5 6
+// 7 8 9
+
+function generateSquareMatrix(size) {
+  const matrix = [];
+  let num = 1;
+
+  for (let i = 0; i < size; i++) {
+    const row = [];
+    for (let j = 0; j < size; j++) {
+      row.push(num++);
+    }
+    matrix.push(row);
+  }
+
+  return matrix;
+}
+
+
+const size = 3;
+const matrix = generateSquareMatrix(size);
+
+
+for (let row of matrix) {
+  console.log(row.join(" "));
+}
