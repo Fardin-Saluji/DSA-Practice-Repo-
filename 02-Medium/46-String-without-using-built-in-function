@@ -1,0 +1,16 @@
+// Problem: Write a program to determine the length of a string without using Built-in-function
+// Input: string = "hello"
+// Output: 5
+
+function findStringLength(str) {
+  let count = 0;
+
+  for (let char of str) {
+    count++;
+  }
+
+  return count;
+}
+
+const string = "hello";
+console.log(findStringLength(string)); 
