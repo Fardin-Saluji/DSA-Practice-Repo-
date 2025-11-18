@@ -1,2 +1,2 @@
-# 🧩 Easy JavaScript Logic Exercises
+# 🧩 Medium JavaScript Logic Exercises
 This folder contains beginner-level logic-building exercises in JavaScript.
