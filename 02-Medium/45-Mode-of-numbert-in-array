@@ -1,0 +1,29 @@
+// Problem: Write a program to find the mode (most frequent number) in an array
+// Input: array = [1, 2, 2, 3, 4, 4, 4]
+// Output: 4
+
+function findMode(array) {
+  if (array.length === 0) return null; 
+
+  const frequency = {}; 
+
+  for (let num of array) {
+    frequency[num] = (frequency[num] || 0) + 1;
+  }
+
+  let mode = array[0];
+  let maxCount = frequency[mode];
+
+  for (let num in frequency) {
+    if (frequency[num] > maxCount) {
+      maxCount = frequency[num];
+      mode = Number(num);
+    }
+  }
+
+  return mode;
+}
+
+
+const array = [1, 2, 2, 3, 4, 4, 4];
+console.log(findMode(array)); 
