@@ -1,0 +1,10 @@
+// Problem: Write a program to count how many times a specific word appears in a given String
+// Input: string = "hello world hello"
+// Output: 2
+
+function countWord(str, word) {
+  return str.split(' ').filter(w => w === word).length;
+}
+
+const string = "hello world hello";
+console.log(countWord(string, "hello"));
