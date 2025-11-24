@@ -1,0 +1,22 @@
+// Problem: Write a program to find the longest sequence of consecutive 1s  in binary array
+// Input: array = [1, 1, 0, 1, 1, 1]
+// Output: 3
+
+function longestOnes(arr) {
+    let maxCount = 0;
+    let currentCount = 0;
+
+    for (let num of arr) {
+        if (num === 1) {
+            currentCount++;
+            maxCount = Math.max(maxCount, currentCount);
+        } else {
+            currentCount = 0;
+        }
+    }
+
+    return maxCount;
+}
+
+
+console.log(longestOnes([1, 1, 0, 1, 1, 1])); 
