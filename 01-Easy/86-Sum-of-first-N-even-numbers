@@ -1,0 +1,14 @@
+// Problem: Write a program to calculate the sum of the first N even numbers.
+// Input: N = 4
+// Output: 20
+
+function sumOfEvenNumbers(N) {
+    let sum = 0;
+    for (let i = 1; i <= N; i++) {
+        sum += 2 * i;
+    }
+    return sum;
+}
+
+
+console.log(sumOfEvenNumbers(4)); 
