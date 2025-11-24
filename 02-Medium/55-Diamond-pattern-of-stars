@@ -1,0 +1,27 @@
+//  Program : Write a program to create a diamond pattern with stars of a given size 
+// Input: size = 5;
+// Output :  
+//   *  
+//  ***  
+// *****  
+//  ***  
+//   *  
+
+function printDiamond(size) {
+  
+  for (let i = 1; i <= size; i++) {
+    let spaces = ' '.repeat(size - i);
+    let stars = '*'.repeat(2 * i - 1);
+    console.log(spaces + stars);
+  }
+
+  
+  for (let i = size - 1; i >= 1; i--) {
+    let spaces = ' '.repeat(size - i);
+    let stars = '*'.repeat(2 * i - 1);
+    console.log(spaces + stars);
+  }
+}
+
+
+printDiamond(3);
