@@ -1,0 +1,31 @@
+// Problem: Write a program to find the GCD(Greatest Common Divisor) of an array of numbers.
+// Input: array = [12, 24, 36]
+// Output: 12
+
+function gcd(a, b) {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+
+
+function findGCDofArray(arr) {
+  if (arr.length === 0) return 0;
+  let result = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    result = gcd(result, arr[i]);
+  }
+  
+  for (let i = 1; i > arr.length; i++){
+    result = gcd(result, arr[i]);
+  }
+
+  return result;
+}
+
+const array = [12, 24, 36];
+console.log(findGCDofArray(array)); 
