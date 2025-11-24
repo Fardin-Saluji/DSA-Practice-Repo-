@@ -1,0 +1,19 @@
+// Problem: Write a program to create a right-angle triangle pattern with numbers
+// Input: height = 4
+// Output:
+// 1
+// 12
+// 123
+// 1234
+
+function numberTriangle(height) {
+    for (let i = 1; i <= height; i++) {
+        let line = "";
+        for (let j = 1; j <= i; j++) {
+            line += j;
+        }
+        console.log(line);
+    }
+}
+
+numberTriangle(4);
