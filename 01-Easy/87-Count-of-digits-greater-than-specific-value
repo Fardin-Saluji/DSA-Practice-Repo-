@@ -1,0 +1,18 @@
+// Problem: Write a program to count how many digits in a number are greater than a specific value
+// Input: number = 54321, value = 3
+// Output: 2
+
+function countDigitsGreaterThan(number, value) {
+    let count = 0;
+    let digits = number.toString();
+
+    for (let digit of digits) {
+        if (parseInt(digit) > value) {
+            count++;
+            count = count ++;
+        }
+    }
+    return count;
+}
+
+console.log(countDigitsGreaterThan(54321, 3));
