@@ -1,0 +1,12 @@
+// Problem: Write a program to check if a substring is repeated within a given string
+// Input: string = "abab"
+// Output: true
+
+function repeatedSubstringPattern(s) {
+    const t = (s + s).slice(1, -1);
+    return t.includes(s);
+}
+
+console.log(repeatedSubstringPattern("abab"));
+console.log(repeatedSubstringPattern("aba")); 
+console.log(repeatedSubstringPattern("abcabcabc")); 
