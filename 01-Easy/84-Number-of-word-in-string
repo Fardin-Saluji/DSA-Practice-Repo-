@@ -1,0 +1,14 @@
+// Problem: Write a program to count the number of words in a given string
+// Input: string = "Hello world"
+// Output: 2
+
+function countWords(str) {
+    if (!str.trim()) return 0; 
+    return str.trim().split(/\s+/).length;
+}
+
+
+console.log(countWords("Hello world"));          
+console.log(countWords("  Hello   world  "));    
+console.log(countWords("This is a test"));       
+console.log(countWords("")); 
