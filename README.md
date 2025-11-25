@@ -18,5 +18,5 @@ To strengthen my problem-solving and coding foundation before moving to DSA in J
 ## 👨‍💻 Author
 **Fardin Saluji**  
 📍 Mumbai, India  
-💻 MERN Stack Developer | DSA JavaScript Learner 
+💻 MERN Stack Developer | DSA JavaScript Learner jjjjjj
 🔗 [GitHub Profile](https://github.com/Fardin-Saluji)
