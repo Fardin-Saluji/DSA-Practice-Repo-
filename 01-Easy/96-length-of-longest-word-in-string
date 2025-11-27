@@ -1,0 +1,21 @@
+// 96 Finding the length of the longest word in a string
+// Problem: Write a program to find the length of the longest word in a given
+// Input: string = "Find the longest word"
+// Output: 8
+
+function longestWordLength(str) {
+    const words = str.split(" ");
+
+
+    let maxLength = 0;
+    for (let word of words) {
+        if (word.length > maxLength) {
+            maxLength = word.length;
+        }
+    }
+
+    return maxLength;
+}
+
+const input = "Find the longest word";
+console.log(longestWordLength(input));
