@@ -1,0 +1,27 @@
+// 95 Generating a Matrix with random Numbers
+// Problem: Write a program to generate a matrix filled with random numbers
+// Input: rows = 2, columns = 3
+// Output:
+// 3 8 1
+// 7 4 6
+
+function generateRandomMatrix(rows, columns) {
+    const matrix = [];
+
+    for (let i = 0; i < rows; i++) {
+        const row = [];
+        for (let j = 0; j < columns; j++) {
+            row.push(Math.floor(Math.random() * 10) + 1);
+        }
+        matrix.push(row);
+    }
+
+    return matrix;
+}
+
+
+const rows = 2;
+const columns = 3;
+const matrix = generateRandomMatrix(rows, columns);
+
+matrix.forEach(row => console.log(row.join(" ")));
