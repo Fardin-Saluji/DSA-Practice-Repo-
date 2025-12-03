@@ -1,0 +1,27 @@
+// Problems: Write a program to generate square matrix where each element is a random value
+// Input: size = 3
+// Output
+// 7 3 5
+// 2 6 9
+// 1 8 4
+
+function generateMatrix(size) {
+    let matrix = [];
+
+    for (let i = 0; i < size; i++) {
+        let row = [];
+        for (let j = 0; j < size; j++) {
+            row.push(Math.floor(Math.random() * 9) + 1);
+        }
+        matrix.push(row);
+    }
+
+    return matrix;
+}
+
+
+const size = 3;
+const matrix = generateMatrix(size);
+
+
+matrix.forEach(row => console.log(row.join(" ")));
