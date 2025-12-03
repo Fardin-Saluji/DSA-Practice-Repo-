@@ -1,0 +1,15 @@
+// Program: Write a program to create a triangle pattern of stars with a specified height
+// Input: height = 4
+// Output: 
+// *
+// **
+// ***
+// ****
+
+function starTriangle(height) {
+    for (let i = 1; i <= height; i++) {
+        console.log("*".repeat(i));
+    }
+}
+
+starTriangle(4);
