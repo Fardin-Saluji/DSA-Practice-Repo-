@@ -1,0 +1,21 @@
+// Problem: Print a pattern where stars increase to a midpoint and then decreaase
+// Input: n = 3;
+// Output: 
+//   *
+//  ***
+// *****
+//  ***
+//   *
+
+function printPatternIncreasingandDecreasing(stars) {
+    for (let i=0; i<5; i++) {
+        let row = "";
+        for (let j=0; j<i; j++) {
+            row = row + "*";
+        }
+        console.log("*");
+    }
+}
+
+printPatternIncreasingandDecreasing(stars);
+
