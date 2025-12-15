@@ -1,0 +1,16 @@
+// Problem: Print a pyramid pattern with stars (*). The pyramid should have a single peak and each row should have an increasing number of stars, centered horizontally
+// Input: n = 3
+// Output: 
+//   *
+//  ***
+// *****
+
+function printPyramid(n) {
+    for (let i = 1; i <= n; i++) {
+        let spaces = ' '.repeat(n - i);
+        let stars = '*'.repeat(2 * i - 1);
+        console.log(spaces + stars);
+    }
+}
+
+printPyramid(3);
