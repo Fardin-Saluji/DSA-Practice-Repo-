@@ -1,0 +1,15 @@
+// Problem: Print a right-angle triangle pattern using characters. Each row should contain the same character repeated according to the row number.
+// Input: n = 3;
+// Output:
+// A
+// BB
+// CCC
+
+function printTriangle(n) {
+    for (let i = 1; i <= n; i++) {
+        let char = String.fromCharCode(64 + i); 
+        console.log(char.repeat(i));
+    }
+}
+
+printTriangle(3);
