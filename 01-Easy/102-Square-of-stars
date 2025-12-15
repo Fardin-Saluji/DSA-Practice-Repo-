@@ -1,0 +1,18 @@
+// Problem : Print a square pattern of stars(*).Each row and column should have the same numbers of stars
+// Input: n = 5
+// Output: 
+// *****
+// *****
+// *****
+// *****
+// *****
+
+let n = 5;
+
+for(let i = 0; i<n; i++) {
+    let row = "";
+    for(let j=0; j<n; j++){
+        row = row + "*";
+    }
+    console.log(row);
+}
