@@ -1,0 +1,15 @@
+// Program: Print a right-angle triangle patterns of stars(*). Each row should contain an increasing number of stars, starting from 1 star in the first row
+// Input: n = 4;
+// Output:
+// *
+// **
+// ***
+// ****
+
+function printTriangle(n) {
+    for (let i = 1; i <= n; i++) {
+        console.log("*".repeat(i));
+    }
+}
+
+printTriangle(4);
