@@ -1,0 +1,19 @@
+// Problem: Print an inverted pyramid pattern using characters. Each row should have decreasing characters from the top row.
+// Input: n = 3;
+// Output:
+// CCC
+//  BB
+//   A
+
+function printInvertedPyramid(n) {
+    for (let i = n; i >= 1; i--) {
+        let spaces = " ".repeat(n - i);
+
+        let char = String.fromCharCode(64 + i);
+
+        console.log(spaces + char.repeat(i));
+    }
+}
+
+printInvertedPyramid(3);
+
