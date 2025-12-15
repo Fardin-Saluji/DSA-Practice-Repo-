@@ -1,0 +1,22 @@
+// Problem: Print a right-angle triangle pattern with increasing numbers. Each row should contain a continuous sequence of increasing numbers 
+// Input: n = 4
+// Output
+// 1
+// 23
+// 456
+// 78910
+
+function printNumberTriangle(n) {
+    let num = 1;
+
+    for (let i = 1; i <= n; i++) {
+        let row = "";
+        for (let j = 1; j <= i; j++) {
+            row += num;
+            num++;
+        }
+        console.log(row);
+    }
+}
+
+printNumberTriangle(4);
