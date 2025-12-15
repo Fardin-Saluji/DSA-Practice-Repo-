@@ -1,0 +1,16 @@
+// Problem: Print a pattern where each row has an increasing width of stars
+// Input: n = 3;
+// Output:
+// *
+// ***
+// *****
+
+function printStarPattern(n) {
+    for (let i = 1; i <= n; i++) {
+        let stars = "*".repeat(2 * i - 1); // width increases by 2 each row
+        console.log(stars);
+    }
+}
+
+
+printStarPattern(3);
