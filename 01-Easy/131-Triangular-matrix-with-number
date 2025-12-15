@@ -1,0 +1,21 @@
+// Problem: Print a triangular matrix where each row contains increasing numbers.Each subsequent row should start from the next number
+// Input: n = 3
+// Output: 
+// 1
+// 2 3
+// 4 5 6
+
+function printTriangularMatrix(n) {
+    let num = 1;
+
+    for (let i = 1; i <= n; i++) {
+        let row = "";
+        for (let j = 1; j <= i; j++) {
+            row += num + " ";
+            num++;
+        }
+        console.log(row.trim());
+    }
+}
+
+printTriangularMatrix(3);
