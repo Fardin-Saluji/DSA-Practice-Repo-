@@ -1,0 +1,18 @@
+// Problem: Print an inverted triangle Pattern with stars (*). Each row should Contain Decreasing numbers of stars from the top row
+// Input: n = 5
+// Output: 
+// *****
+//  ****
+//   ***
+//    **
+//     *
+
+function printInvertedTriangle(n) {
+    for (let i = 0; i < n; i++) {
+        let spaces = ' '.repeat(i);
+        let stars = '*'.repeat(n - i);
+        console.log(spaces + stars);
+    }
+}
+
+printInvertedTriangle(5);
