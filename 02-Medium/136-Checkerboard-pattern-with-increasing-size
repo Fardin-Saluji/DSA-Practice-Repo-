@@ -1,0 +1,22 @@
+// Problem: Print a checkerboard pattern where the size of each square increases as you move along the matrix
+// Input: n = 3
+// Output: 
+// XOX
+// OXO
+// X0X
+
+function printCheckerboard(n) {
+    for (let i = 0; i < n; i++) {
+        let row = "";
+        for (let j = 0; j < n; j++) {
+            if ((i + j) % 2 === 0) {
+                row += "X";
+            } else {
+                row += "O";
+            }
+        }
+        console.log(row);
+    }
+}
+
+printCheckerboard(3);
