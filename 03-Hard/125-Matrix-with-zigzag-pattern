@@ -1,0 +1,28 @@
+// Problem: Print a matrix with a zigzag pattern of numbers. The numbers should alternate direction row-wise
+// Input: n = 3
+// Output:
+// 1 2 3 4
+// 8 7 6 5
+// 9 10 11 12
+
+function printZigzagMatrix(rows, cols) {
+    let num = 1;
+
+    for (let i = 0; i < rows; i++) {
+        let row = new Array(cols);
+
+        if (i % 2 === 0) {
+            for (let j = 0; j < cols; j++) {
+                row[j] = num++;
+            }
+        } else {
+            for (let j = cols - 1; j >= 0; j--) {
+                row[j] = num++;
+            }
+        }
+
+        console.log(row.join(" "));
+    }
+}
+
+printZigzagMatrix(3, 4);
