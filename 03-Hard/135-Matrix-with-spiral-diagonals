@@ -1,0 +1,20 @@
+// Problem: Print a matrix with numbers arranged in diagonal spirals. The numbers should fill the matrix in a diagonal spiral fashion
+// Input: n = 3
+// Output: 
+// 1 2 3
+// 4 5 6
+// 7 8 9
+
+function printDiagonalSpiralMatrix(n) {
+    let num = 1;
+
+    for (let i = 0; i < n; i++) {
+        let row = [];
+        for (let j = 0; j < n; j++) {
+            row.push(num++);
+        }
+        console.log(row.join(" "));
+    }
+}
+
+printDiagonalSpiralMatrix(3);
