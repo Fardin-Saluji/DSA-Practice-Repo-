@@ -11,7 +11,7 @@ To strengthen my problem-solving and coding foundation before moving to DSA in J
 ---
 
 ## 📈 Progress
-🧩 Completed: 126 / 150  
+🧩 Completed: 84 / 150  
 ⏳ In Progress: DSA Logic Practice (Easy → Medium → Hard)
 
 ---
